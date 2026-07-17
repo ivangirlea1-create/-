@@ -17,6 +17,8 @@ let equipment = 100;
 let productionLevel = 1;
 let day = 1;
 
+let metallurgistDay = false;
+
 // Экономика
 let steelPrice = 800;
 let orePrice = 120;
@@ -740,3 +742,35 @@ setInterval(function(){
     competitorTurn();
 
 },5000);
+function updateUI() {
+
+    setText("money", money + " ₽");
+    setText("ore", ore + " т");
+    setText("coal", coal + " т");
+    setText("steel", steel + " т");
+    setText("electricity", electricity + "%");
+    setText("workers", workers);
+    setText("temperature", furnaceTemperature + " °C");
+    setText("equipment", equipment + "%");
+    setText("day", day);
+    setText("priceSteel", steelPrice + " ₽/т");
+
+
+    // 🎉 День металлурга
+    if (money >= 2000000 && metallurgistDay == false) {
+
+        metallurgistDay = true;
+
+        alert(
+        "🎉 ПОЗДРАВЛЯЕМ!\n\n" +
+        "🏭 С ДНЁМ МЕТАЛЛУРГА!\n\n" +
+        "💰 Ваш завод заработал 2 000 000 ₽!\n\n" +
+        "⚒ Желаем крепкого здоровья,\n" +
+        "🔥 горячих плавок,\n" +
+        "🏭 успешного производства\n" +
+        "и новых побед!"
+        );
+
+    }
+
+}
