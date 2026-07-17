@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Директор металлургического завода</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+🏭 Директор металлургического завода
+
+</header>
+
+<div class="container">
+
+<!-- Левая панель -->
+
+<div class="sidebar">
+
+<h2>Показатели</h2>
+
+<div class="stat">
+💰 Деньги:
+<div id="money"></div>
+</div>
+
+<div class="stat">
+⛏ Руда:
+<div id="ore"></div>
+</div>
+
+<div class="stat">
+🔥 Уголь:
+<div id="coal"></div>
+</div>
+
+<div class="stat">
+🏗 Сталь:
+<div id="steel"></div>
+</div>
+
+<div class="stat">
+⚡ Электроэнергия:
+<div id="electricity"></div>
+
+<div class="progress">
+<div id="energyBar"></div>
+</div>
+
+</div>
+
+<div class="stat">
+👷 Рабочие:
+<div id="workers"></div>
+</div>
+
+<div class="stat">
+🌡 Температура печи:
+<div id="temperature"></div>
+</div>
+
+<div class="stat">
+🔧 Состояние оборудования:
+<div id="equipment"></div>
+
+<div class="progress">
+<div id="equipmentBar"></div>
+</div>
+
+</div>
+
+<div class="stat">
+📅 День:
+<div id="day"></div>
+</div>
+
+<div class="stat">
+📈 Цена стали:
+<div id="priceSteel"></div>
+</div>
+
+</div>
+
+<!-- Правая часть -->
+
+<div class="main">
+
+<h2>Производство</h2>
+
+<div class="factory">
+
+<div class="building">
+
+<h3>🏭 Доменная печь</h3>
+
+<button onclick="produceSteel()">
+Выплавить сталь
+</button>
+
+<button onclick="increaseTemperature()">
+Повысить температуру
+</button>
+
+<button onclick="decreaseTemperature()">
+Понизить температуру
+</button>
+
+</div>
+
+<div class="building">
+
+<h3>📦 Склад</h3>
+
+<button onclick="sellSteel()">
+Продать сталь
+</button>
+
+<button onclick="buyOre()">
+Купить руду
+</button>
+
+<button onclick="buyCoal()">
+Купить уголь
+</button>
+
+<button onclick="buyElectricity()">
+Купить электроэнергию
+</button>
+
+</div>
+
+<div class="building">
+
+<h3>👷 Управление</h3>
+
+<button onclick="hireWorkers()">
+Нанять рабочих
+</button>
+
+<button onclick="repairEquipment()">
+Отремонтировать
+</button>
+
+<button onclick="upgradeFactory()">
+Модернизировать завод
+</button>
+
+<button onclick="nextDay()">
+Следующий день
+</button>
+
+</div>
+
+</div>
