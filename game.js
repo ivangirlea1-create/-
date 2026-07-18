@@ -48,14 +48,14 @@ function updateUI() {
     updateBar("energyBar", electricity);
 
     // 🎉 День металлурга
-if (money >= 2000000 && metallurgistDay == false) {
+if (money >= 9000000 && metallurgistDay == false) {
 
     metallurgistDay = true;
 
     alert(
         "🎉 ПОЗДРАВЛЯЕМ!\n\n" +
         "🏭 С ДНЁМ МЕТАЛЛУРГА!\n\n" +
-        "💰 Ваш завод заработал 2 000 000 ₽!"
+        "💰 Ваш завод заработал 9 000 000 ₽!"
     );
 }
 }
